@@ -5,13 +5,13 @@
 @import "blueprint/liquid";
 @import "compass/css3";
 
-
-#fir {
+/*#fir {
       background-color: red;
       @include border-top-left-radius(25px);
       color: green;
 
-      }
+}*/
+
 #headSection {
   @include column(24,true);
   height: 200px;
@@ -32,4 +32,31 @@
   background-color: #eee8aa;
 
 }
+#addThis {
+  @include column(16);
+  /*position: relative;
+  left: 100px;*/
+  padding-bottom: 30px;
+  padding-top: 30px;
 
+}
+#translate {
+  @include column(8,true);
+  /*position: relative;
+  left: 100px;*/
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+#testimonials {
+  @include column(8,true);
+
+}
+
+#footerSection {
+  @include column(16, true);
+
+}
+
+#payment {
+
+}
