@@ -20,6 +20,10 @@ end
 group :development, :test do
   gem 'rspec-rails'
 end
+group :production do
+# gems specifically for Heroku go here
+  gem 'pg'
+end
 
 gem 'jquery-rails'
 

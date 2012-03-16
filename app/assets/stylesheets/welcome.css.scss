@@ -2,8 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
+@import "blueprint/liquid";
 @import "compass/css3";
+
 
 #fir {
       background-color: red;
@@ -11,3 +12,24 @@
       color: green;
 
       }
+#headSection {
+  @include column(24,true);
+  height: 200px;
+  background-color: orange;
+  text-align: center;
+
+}
+
+#firstColumn {
+
+   @include column(16);
+   background-color: #ffebcd;
+
+}
+#lastColumn {
+
+  @include column(8,true);
+  background-color: #eee8aa;
+
+}
+
