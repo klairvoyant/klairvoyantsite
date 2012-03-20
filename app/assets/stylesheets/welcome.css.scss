@@ -14,9 +14,16 @@
 
 #headSection {
   @include column(24,true);
-  height: 200px;
-  background-color: orange;
+  height: 250px;
   text-align: center;
+  background-image: url("klairvoyantlogo.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  font-family: 'Tangerine', serif;
+  font-size: 100px;
+  color: #4cb4e9;
+
+
 
 }
 
@@ -58,5 +65,36 @@
 }
 
 #payment {
+
+}
+/*for feed burner*/
+
+div.feedburnerFeedBlock {
+  border:2px solid #ddd;
+  background-color:#ffe;
+  padding:12px;
+}
+
+
+div.feedburnerFeedBlock ul li span.headline {
+  font-weight:bold;
+}
+div.feedburnerFeedBlock ul {
+  margin-left:0;
+  padding-left:0;
+  list-style-type: none
+}
+div.feedburnerFeedBlock ul li span.headline {
+  font-weight:bold;
+  display:block;
+  margin:12px 0 0 0;
+}
+
+/*for feed burner*/
+
+#navigation {
+
+  font-size: 20px;
+  font-family: sans-serif;
 
 }

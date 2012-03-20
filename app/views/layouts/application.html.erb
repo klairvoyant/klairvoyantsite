@@ -3,14 +3,37 @@
 <head>
   <title>Klairvoyantsite</title>
   <%= stylesheet_link_tag    "application" %>
+  <%= stylesheet_link_tag    "http://fonts.googleapis.com/css?family=Tangerine" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
 <div id="headSection">
-  Picture
+  Klairvoyant  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Infosolutions
+
+
+ <div id="navigation">
+
+   <ul class="dropdown">
+     <li><a href="#">Home</a>
+     </li>
+     <li><a href="#">Services</a>
+       <ul class="sub_menu">
+         <li><a href="<%= url_for(:action => 'rails', :controller => 'welcome') %>" >Ruby On Rails</a></li>
+         <li><a href="<%= url_for(:action => 'design', :controller => 'welcome') %>">Web Development</a></li>
+         <li><a href="<%= url_for(:action => 'graphic', :controller => 'welcome') %>">Web Designing</a></li>
+         <li><a href="<%= url_for(:action => 'marketing', :controller => 'welcome') %>">Marketing</a></li>
+       </ul>
+     </li>
+     <li><a href="#">Contact</a>
+     </li>
+ </ul>
+ </div>
+
 </div>
+
+
 
 
 
