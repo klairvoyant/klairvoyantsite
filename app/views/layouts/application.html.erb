@@ -16,9 +16,9 @@
  <div id="navigation">
 
    <ul class="dropdown">
-     <li><a href="#">Home</a>
+     <li><a href="<%= url_for(:action => 'index', :controller => 'welcome') %>">Home</a>
      </li>
-     <li><a href="#">Services</a>
+     <li><a href="<%= url_for(:action => 'services', :controller => 'welcome') %>">Services</a>
        <ul class="sub_menu">
          <li><a href="<%= url_for(:action => 'rails', :controller => 'welcome') %>" >Ruby On Rails</a></li>
          <li><a href="<%= url_for(:action => 'design', :controller => 'welcome') %>">Web Development</a></li>
@@ -26,7 +26,7 @@
          <li><a href="<%= url_for(:action => 'marketing', :controller => 'welcome') %>">Marketing</a></li>
        </ul>
      </li>
-     <li><a href="#">Contact</a>
+     <li><a href="<%= url_for(:action => 'contact', :controller => 'welcome') %>">Contact</a>
      </li>
  </ul>
  </div>
