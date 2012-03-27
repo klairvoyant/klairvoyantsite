@@ -6,16 +6,9 @@
 @import "compass/css3";
 @import "compass/typography/lists/horizontal-list";
 
-/*#fir {
-      background-color: red;
-      @include border-top-left-radius(25px);
-      color: green;
-
-}*/
 
 #headSection {
   @include column(24,true);
-  //height: 200px;
   text-align: center;
   background-image: url("klairvoyantlogo.jpg");
   background-position: center top;
@@ -30,14 +23,24 @@
 
 #firstColumn {
 
-   @include column(13);
-   background-color: #ffebcd;
+   @include column(14);
+   //background-color: #ffebcd;
+   /*border-style: solid;
+   border-width: 1px;
+   border-color: #55b9eb;*/
+  margin-top: 20px;
+
 
 }
 #lastColumn {
 
-  @include column(7);
-  background-color: #eee8aa;
+  @include column(6);
+  //background-color: #eee8aa;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #55b9eb;
+  height:450px;
+  margin-top: 20px;
 
 }
 #addThis {
@@ -103,33 +106,40 @@
 
 }
 
-#payment {
 
-}
-/*for feed burner*/
+/*for feed burner start*/
 
 div.feedburnerFeedBlock {
-  border:2px solid #ddd;
-  background-color:#ffe;
-  padding:12px;
+ font-size: 20px;
+font-family: 'Varela Round', sans-serif;
+
+
 }
 
 
 div.feedburnerFeedBlock ul li span.headline {
-  font-weight:bold;
+
+
+  //font-family: 'Tangerine', serif;
+  text-align: center;    
+  a{
+  text-decoration: none;
+    color:#1574c4;
+    font-size: 15px;
+  }
 }
 div.feedburnerFeedBlock ul {
   margin-left:0;
   padding-left:0;
   list-style-type: none
 }
-div.feedburnerFeedBlock ul li span.headline {
+/*div.feedburnerFeedBlock ul li span.headline {
   font-weight:bold;
   display:block;
   margin:12px 0 0 0;
-}
+} */
 
-/*for feed burner*/
+/*for feed burner end */
 
 #navigationspace {
   @include column(14);
@@ -151,6 +161,7 @@ div.feedburnerFeedBlock ul li span.headline {
   border-style: solid;
   border-width: 1px;
   border-color:#55b9eb;
+  margin-bottom: 20px;
 
 
 }
@@ -193,5 +204,42 @@ ul.dropdown {
   background-image: url("side.jpg");
   height: 400px;
 
+
+}
+.head1 {
+  //color:#1574c4;
+  color: #ffffff;
+  //font-size: 70px;
+  font-size: 25px;
+  font-family: sans-serif;
+  //font-family: 'Tangerine', serif;
+  text-align: center;
+  background-color:#55b9eb;
+  margin-bottom: 20px;
+
+}
+.head2 {
+  font-size: 25px;
+  //font-size: bolder;
+  font-family: sans-serif;
+  color: #ffffff;
+  border-style: solid;
+  border-width: 1px;
+  border-color:#55b9eb;
+  margin-bottom: 20px;
+  background-color:#55b9eb;
+}
+.para {
+  font-size: 20px;
+  //font-family: sans-serif;
+  font-family: 'Varela Round', sans-serif;
+  text-align: justify;
+
+}
+#payment table {
+  font-size: 15px;
+  font-family: 'Varela Round', sans-serif;
+  color:#1574c4;
+  padding-left:33%;
 
 }
