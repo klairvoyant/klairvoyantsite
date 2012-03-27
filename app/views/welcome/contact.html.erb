@@ -1,14 +1,28 @@
+<!-- for facebook -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=210932928927426";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div id="navigation">
+  <div id="navigationspace">
+    &nbsp;
+  </div>
+
+  <ul class="dropdown">
+    <li><a href="<%= url_for(:action => 'index', :controller => 'welcome') %>">Home</a>    </li>
+    <li><a href="<%= url_for(:action => 'services', :controller => 'welcome') %>">Services</a>   </li>
+    <li><a href="<%= url_for(:action => 'contact', :controller => 'welcome') %>">Contact</a>       </li>
+  </ul>
+</div>
 <div id="firstColumn">
 
   Mail us  box
 
-  follow us on linkedin
 
-  <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-  <script type="IN/CompanyProfile" data-id="2146610" data-format="hover" data-text="klairvoyant Infosolutions" data-related="false"></script>
-
-  <a href="https://twitter.com/klairvoyantinfo" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @klairvoyantinfo</a>
-  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
   <!-- Google Maps Element Code -->
   <iframe frameborder=0 marginwidth=0 marginheight=0 border=0 style="border:0;margin:0;width:300px;height:250px;" src="http://www.google.com/uds/modules/elements/mapselement/iframe.html?maptype=roadmap&latlng=10.618599%2C76.036891&mlatlng=10.618599%2C76.036891&maddress1=Muttath%2C%20kottapady&maddress2=Kerala%20680505%2C%20India&mtitle=Klairvoyant%20Infosolutions&element=true" scrolling="no" allowtransparency="true"></iframe>
@@ -22,33 +36,11 @@
 
   Post Box  No: 709, East Fort, Thrissur, Kerala, India 680005
 
-  <iframe src="http://free.timeanddate.com/clock/i314wdpb/n1892/szw110/szh110/hoc09f/hbw0/hfc09f/cf100/hnce1ead6/fas30/fdi66/mqc000/mql15/mqw4/mqd98/mhc000/mhl15/mhw4/mhd98/mmc000/mml10/mmw1/mmd98/hwm1/hhs2/hms2" frameborder="0" width="112" height="112"></iframe>
-  <iframe src="http://free.timeanddate.com/clock/i314wdpb/n1892/tct/pct/ftb/pd2/tt0/tw1/tm1/ts1/ta1/tb4" frameborder="0" width="129" height="34" allowTransparency="true"></iframe>
 
+  <!-- Facebook Badge START <a href="https://www.facebook.com/klairvoyant.info" target="_TOP" style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" title="Klairvoyant Infosolutions">Klairvoyant Infosolutions</a><span style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; line-height: 16px; font-variant: normal; font-style: normal; font-weight: normal; color: #555555; text-decoration: none;">&nbsp;|&nbsp;</span><a href="http://www.facebook.com/business/dashboard/" target="_TOP" style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" title="Make your own badge!">Promote Your Page Too</a><br/><a href="https://www.facebook.com/klairvoyant.info" target="_TOP" title="Klairvoyant Infosolutions"><img src="https://badge.facebook.com/badge/176523462377124.2170.36631937.png" style="border: 0px;" /></a><!-- Facebook Badge END -->
 
+  <div class="fb-like-box" data-href="https://www.facebook.com/klairvoyant.info" data-width="292" data-show-faces="true" data-stream="true" data-header="true"></div>
 
-
-  <!--
-Skype 'My status' button
-http://www.skype.com/go/skypebuttons
--->
-  <script type="text/javascript" src="http://download.skype.com/share/skypebuttons/js/skypeCheck.js"></script>
-  <a href="skype:klairvoyantinfo?call"><img src="http://mystatus.skype.com/bigclassic/klairvoyantinfo" style="border: none;" width="182" height="44" alt="My status" /></a>
-
-  <!-- Facebook Badge START --><a href="https://www.facebook.com/klairvoyant.info" target="_TOP" style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" title="Klairvoyant Infosolutions">Klairvoyant Infosolutions</a><span style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; line-height: 16px; font-variant: normal; font-style: normal; font-weight: normal; color: #555555; text-decoration: none;">&nbsp;|&nbsp;</span><a href="http://www.facebook.com/business/dashboard/" target="_TOP" style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" title="Make your own badge!">Promote Your Page Too</a><br/><a href="https://www.facebook.com/klairvoyant.info" target="_TOP" title="Klairvoyant Infosolutions"><img src="https://badge.facebook.com/badge/176523462377124.2170.36631937.png" style="border: 0px;" /></a><!-- Facebook Badge END -->
-
-  <!-- Place this tag in the <head> of your document -->
-  <link href="https://plus.google.com/105958712545412704818" rel="publisher" /><script type="text/javascript">
-    window.___gcfg = {lang: 'en'};
-    (function()
-    {var po = document.createElement("script");
-        po.type = "text/javascript"; po.async = true;po.src = "https://apis.google.com/js/plusone.js";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(po, s);
-    })();</script>
-
-  <!-- Place this tag where you want the badge to render -->
-  <div class="g-plus" data-href="https://plus.google.com/105958712545412704818" data-width="300" data-height="69" data-theme="light"></div>
 
 
 </div>
