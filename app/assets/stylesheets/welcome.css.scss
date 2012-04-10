@@ -1,11 +1,11 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
 @import "blueprint/liquid";
 @import "compass/css3";
 @import "compass/typography/lists/horizontal-list";
-
+@import "blueprint/form";
+@import "blueprint/buttons";
 
 #headSection {
   @include column(24,true);
@@ -16,94 +16,65 @@
   font-family: 'Tangerine', serif;
   font-size: 100px;
   color: #4cb4e9;
-
-
-
 }
-
 #firstColumn {
-
-   @include column(14);
-   //background-color: #ffebcd;
-   /*border-style: solid;
-   border-width: 1px;
-   border-color: #55b9eb;*/
+  @include column(13);
   margin-top: 20px;
-
-
+  background-image: url("pageback.jpg");
 }
 #lastColumn {
-
   @include column(6);
-  //background-color: #eee8aa;
   border-style: solid;
   border-width: 1px;
   border-color: #55b9eb;
-  height:450px;
   margin-top: 20px;
-
 }
 #addThis {
   @include column(8,true);
   padding-bottom: 30px;
   padding-top: 30px;
-
 }
 #skype {
   @include column(1);
-
   padding-bottom: 30px;
   padding-top: 30px;
 }
 #time {
   @include column(3);
-
   padding-bottom: 30px;
   padding-top: 30px;
 }
 #googleplus {
   @include column(1);
-
   padding-bottom: 30px;
   padding-top: 30px;
 }
-
 #facebook {
   @include column(3);
-
   padding-bottom: 30px;
   padding-top: 30px;
 }
 #twitter {
   @include column(3);
-
   padding-bottom: 30px;
   padding-top: 30px;
 }
 #linkedin {
   @include column(1);
-
   padding-bottom: 30px;
   padding-top: 30px;
 }
-
 #translate {
   @include column(4);
-
   padding-bottom: 30px;
   padding-top: 30px;
 }
-
-
 #testimonials {
   @include column(8,true);
-
 }
 
 #footerSection {
   @include column(24, true);
-  background-image: url("Klairvoyantbackground.jpg");
-
 }
 
 
@@ -112,16 +83,9 @@
 div.feedburnerFeedBlock {
  font-size: 20px;
 font-family: 'Varela Round', sans-serif;
-
-
 }
-
-
 div.feedburnerFeedBlock ul li span.headline {
-
-
-  //font-family: 'Tangerine', serif;
-  text-align: center;    
+  text-align: center;
   a{
   text-decoration: none;
     color:#1574c4;
@@ -133,94 +97,51 @@ div.feedburnerFeedBlock ul {
   padding-left:0;
   list-style-type: none
 }
-/*div.feedburnerFeedBlock ul li span.headline {
-  font-weight:bold;
-  display:block;
-  margin:12px 0 0 0;
-} */
-
 /*for feed burner end */
 
 #navigationspace {
   @include column(14);
   background-color:#55b9eb;
-
 }
-#navigationspace2 {
-  @include column(5);
-  background-color:#55b9eb;
-
-}
-
 #navigation {
-
   font-size: 20px;
   font-family: sans-serif;
   @include column(20,true);
-
   border-style: solid;
   border-width: 1px;
   border-color:#55b9eb;
   margin-bottom: 20px;
-
-
 }
-
-
-
 ul.dropdown {
-
-
-@include horizontal-list(25px);
+  @include horizontal-list(25px);
   a{
-  text-decoration: none;
-  color: #55b9eb;
-  &:hover {
-  color: #1574c4;
+    text-decoration: none;
+    color: #55b9eb;
+    &:hover {
+      color: #1574c4;
+    }
   }
-  }
-
 }
-
 #menu1 {
   @include column(10,true);
 }
-
-#menu2 {
-  @include column(19,true);
-
-  }
-
-
 #leftside {
   @include column(2);
-  background-image: url("side.jpg");
-  height: 400px;
-
-
+  height: 450px;
 }
 #rightside {
   @include column(2,true);
-  background-image: url("side.jpg");
-  height: 400px;
-
-
+  height: 450px;
 }
 .head1 {
-  //color:#1574c4;
-  color: #ffffff;
-  //font-size: 70px;
-  font-size: 25px;
+  color:#1574c4;
+  font-size: 30px;
   font-family: sans-serif;
-  //font-family: 'Tangerine', serif;
   text-align: center;
-  background-color:#55b9eb;
   margin-bottom: 20px;
-
 }
 .head2 {
   font-size: 25px;
-  //font-size: bolder;
   font-family: sans-serif;
   color: #ffffff;
   border-style: solid;
@@ -231,15 +152,49 @@ ul.dropdown {
 }
 .para {
   font-size: 20px;
-  //font-family: sans-serif;
   font-family: 'Varela Round', sans-serif;
   text-align: justify;
-
 }
 #payment table {
   font-size: 15px;
   font-family: 'Varela Round', sans-serif;
   color:#1574c4;
   padding-left:33%;
+}
+
+#contactForm {
+  text-align: left;
+  width: 550px;
+  padding-left: 20%;
+}
+.labelText
+ {
+color:#1574c4;
+font-size:20px;
+}
+.notice2 {
+font-size: 20px;
+font-family: 'Varela Round', sans-serif;
+}
+#contactForm
+ {
+  @include blueprint-form;
+  @include blueprint-form-sizes(350px,350px,200px);
+}
+
+#contactForm input[type="submit"] {
+  background-color: #e6eaf5;
+  border: 1px solid black;
+}
+.contactpara {
+  font-size: 20px;
+  font-family: 'Varela Round', sans-serif;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.subHead {
+  color:#1574c4;
+  font-size: 20px;
+  font-family: sans-serif;
 
 }

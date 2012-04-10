@@ -7,11 +7,9 @@ Klairvoyantsite::Application.routes.draw do
 
   get "welcome/rails"
 
-  get "welcome/graphic"
+  get "welcome/sendmail"
 
-  get "welcome/design"
-
-  get "welcome/marketing"
+  #match '/email'=> 'app/mailers/contact_mailer#contact'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
