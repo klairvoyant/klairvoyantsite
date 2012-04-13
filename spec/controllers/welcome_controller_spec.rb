@@ -30,25 +30,4 @@ describe WelcomeController do
     end
   end
 
-  describe "GET 'graphic'" do
-    it "returns http success" do
-      get 'graphic'
-      response.should be_success
-    end
-  end
-
-  describe "GET 'design'" do
-    it "returns http success" do
-      get 'design'
-      response.should be_success
-    end
-  end
-
-  describe "GET 'marketing'" do
-    it "returns http success" do
-      get 'marketing'
-      response.should be_success
-    end
-  end
-
 end
