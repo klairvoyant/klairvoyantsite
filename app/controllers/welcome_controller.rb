@@ -30,11 +30,27 @@ class WelcomeController < ApplicationController
     else
         ContactMailer.contact(name,address,subject,bodydata).deliver
         flash[:notice]="Thanks,mail send successfully"
-        redirect_to(:action =>"contact")
-        return
+        if session[:mobile_view]==true
+          redirect_to(:action =>"contact", :format=> "mobile")
+         return
+        elsif session[:tablet_view]==true
+          redirect_to(:action =>"contact", :format=> "tablet")
+          return
+        else
+          redirect_to(:action =>"contact")
+          return
+        end
+
 
     end
-    redirect_to(:action =>"contact", :name=>name,:address=>address,:subject=>subject,:bodydata=>bodydata )
+    if session[:mobile_view]==true
+      redirect_to(:action =>"contact", :format=> "mobile",:name=>name,:address=>address,:subject=>subject,:bodydata=>bodydata )
+    elsif session[:tablet_view]==true
+      redirect_to(:action =>"contact", :format=> "tablet",:name=>name,:address=>address,:subject=>subject,:bodydata=>bodydata )
+    else
+      redirect_to(:action =>"contact", :name=>name,:address=>address,:subject=>subject,:bodydata=>bodydata )
+    end
+
 
 
   end
