@@ -1,0 +1,75 @@
+<div class="span11">
+  <div class="navbar navbar-inverse">
+    <div class="navbar-inner">
+      <span class="brand"> <%= image_tag("logo.png") %><span class="head_colour">Klairvoyant Infosolutions</span></span>
+      <ul class="nav pushFromTop">
+        <li><a href="<%= url_for(:action => 'index', :controller => 'welcome') %>">Home</a></li>
+        <li><a href="<%= url_for(:action => 'ecommerce', :controller => 'welcome') %>">E-commerce</a></li>
+        <li><a href="<%= url_for(:action => 'map', :controller => 'welcome') %>">Map</a></li>
+        <li class="active"><a href="<%= url_for(:action => 'design', :controller => 'welcome') %>">Design</a></li>
+        <li><a href="<%= url_for(:action => 'contact', :controller => 'welcome') %>">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="span11">
+  <div class="head1"> Graphic Design, Image editing</div>
+</div>
+<div class="span6">
+  <div class="text">
+    <h4>Graphic Design </h4>
+    <p> Graphic design is a creative process, on which want to use a combination of typography, visual arts and page layout techniques to produce a balanced, focused and symmetrical final result.
+        Common uses of graphic design include logos, Brochure, Flyer, Business card, Banner and Mockup creation  </p>
+    <h4> Image editing</h4>
+    <p>
+      Image editing encompasses the processes of altering images. It includes manipulation, enhancement, and transformation.
+      works include Background removal, Photo enhancement, Photo editing, Album Design.
+    </p>
+  </div>
+  <div class="row ">
+
+  </div>
+
+</div>
+<div class="span4">
+
+  <div class="text">
+    <h4> Portfolio</h4>
+    <div class="row ">
+      <div class="span1">
+        <%=image_tag("banner1.jpg") %>
+      </div>
+      <div class="span1">
+        <%=image_tag("brochure1.jpg") %>
+      </div>
+      <div class="span1">
+        <%=image_tag("background.jpg") %>
+      </div>
+
+    </div>
+    <div class="row ">
+      <div class="span1">
+        <%=image_tag("flyer.png") %>
+      </div>
+      <div class="span1">
+        <%=image_tag("flyer1.jpg") %>
+      </div>
+      <div class="span1">
+        <%=image_tag("enhancement.jpg") %>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="span1">
+        <%=image_tag("business card.jpg") %>
+      </div>
+      <div class="span1">
+         <%=image_tag("brochure2.jpg") %>
+      </div>
+      <div class="span1">
+        <%=image_tag("logo.jpg") %>
+      </div>
+    </div>
+
+  </div>
+
+</div>

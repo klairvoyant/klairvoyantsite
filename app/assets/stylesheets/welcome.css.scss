@@ -7,29 +7,34 @@
 @import "blueprint/form";
 @import "blueprint/buttons";
 
+.image_size {
+  width: 100%;    //700 *525
+  height:350px;//480
+}
 
-#headSection {
-  @include column(24,true);
-  text-align: center;
-  background-image: url("klairvoyantlogo.jpg");
-  background-position: center top;
-  background-repeat: no-repeat;
-  font-family: 'Tangerine', serif;
-  font-size: 100px;
-  color: #4cb4e9;
+
+.head_colour {
+  color: #0198dd;
+  font-size: 25px;
+  font-weight: bolder;
+  background-color: black;
+  font-family: 'Varela Round', sans-serif;
+  position: relative;
+  bottom:10px;
+  padding-left: 5px;
+
+}
+.pushFromTop {
+  font-family: 'Varela Round', sans-serif;
+  position: relative;
+  top: 10px;
 }
 #firstColumn {
-  @include column(13);
+  @include column(20);
   margin-top: 20px;
   background-image: url("pageback.jpg");
 }
-#lastColumn {
-  @include column(6);
-  border-style: solid;
-  border-width: 1px;
-  border-color: #55b9eb;
-  margin-top: 20px;
-}
+
 #addThis {
   @include column(8,true);
   padding-bottom: 30px;
@@ -71,9 +76,6 @@
   padding-top: 30px;
 }
 
-#testimonials {
-  @include column(8,true);
-}
 
 #footerSection {
   @include column(24, true);
@@ -101,50 +103,50 @@ div.feedburnerFeedBlock ul {
 }
 /*for feed burner end */
 
-#navigationspace {
-  @include column(14);
-  background-color:#55b9eb;
-}
+//#navigationspace {
+//  @include column(14);
+//  //background-color:#55b9eb;
+//}
 #navigation {
-  font-size: 20px;
-  font-family: sans-serif;
+  //font-size: 20px;
+  //font-family: sans-serif;
   @include column(20,true);
-  border-style: solid;
-  border-width: 1px;
-  border-color:#55b9eb;
-  margin-bottom: 20px;
+  //border-style: solid;
+  //border-width: 1px;
+  //border-color:#55b9eb;
+  //margin-bottom: 20px;
 }
-ul.dropdown {
-  @include horizontal-list(25px);
-  a{
-    text-decoration: none;
-    color: #55b9eb;
-    &:hover {
-      color: #1574c4;
-    }
-  }
-}
-#menu1 {
-  @include column(10,true);
-}
-#leftside {
-  @include column(2);
-  height: 450px;
-}
-#rightside {
-  @include column(2,true);
-  height: 450px;
-}
+//ul.dropdown {
+//  @include horizontal-list(25px);
+//  a{
+//    text-decoration: none;
+//    color: #55b9eb;
+//    &:hover {
+//      color: #1574c4;
+//    }
+//  }
+//}
+//#menu1 {
+//  @include column(10,true);
+//}
+//#leftside {
+//  @include column(2);
+//  height: 450px;
+//}
+//#rightside {
+//  @include column(2,true);
+//  height: 450px;
+//}
 .head1 {
   color:#1574c4;
   font-size: 30px;
-  font-family: sans-serif;
+  font-family: 'Varela Round', sans-serif;
   text-align: center;
   margin-bottom: 20px;
 }
 .head2 {
   font-size: 25px;
-  font-family: sans-serif;
+  font-family: 'Varela Round', sans-serif;
   color: #ffffff;
   border-style: solid;
   border-width: 1px;
@@ -169,10 +171,12 @@ ul.dropdown {
   width: 550px;
   padding-left: 20%;
 }
+
 .labelText
  {
 color:#1574c4;
 font-size:20px;
+font-family: 'Varela Round', sans-serif;
 }
 .notice2 {
 font-size: 20px;
@@ -194,6 +198,13 @@ font-family: 'Varela Round', sans-serif;
   text-align: center;
   padding-bottom: 30px;
 }
+.contactpara2 {
+  font-size: 20px;
+  font-family: 'Varela Round', sans-serif;
+  text-align: justify;
+  padding-bottom: 30px;
+}
+
 .subHead {
   color:#1574c4;
   font-size: 20px;
@@ -202,3 +213,57 @@ font-family: 'Varela Round', sans-serif;
 }
 
 /*  modified on march 14 2013*/
+
+#myCarousel h1 {
+  color:#1574c4;
+  font-size: 25px;
+}
+
+#myCarousel h1 a {
+  text-decoration: none;
+}
+
+.text {
+
+  font-family: 'Varela Round', sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  //padding-bottom: 40px;
+  text-align: justify;
+}
+.text p {
+  padding-bottom: 10px;
+}
+.text h4 {
+  color:#1574c4;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 25px;
+
+
+
+}
+
+.item {
+  font-family: 'Varela Round', sans-serif;
+}
+
+.head3 {
+  color:#1574c4;
+  font-size: 18px;
+  font-family: 'Varela Round', sans-serif;
+  text-align: center;
+  padding-bottom: 30px;
+
+
+}
+
+.head3 a {
+  text-decoration: none;
+}
+
+.moveDownRight {
+  padding-top: 20px;
+  padding-left: 60px;
+}
