@@ -11,7 +11,15 @@ class WelcomeController < ApplicationController
 
   def rails
   end
+  def ecommerce
 
+  end
+  def map
+
+  end
+  def design
+
+  end
 
   def sendmail
     @data_hash = params[:cruncher]

@@ -9,6 +9,12 @@ Klairvoyantsite::Application.routes.draw do
 
   get "welcome/sendmail"
 
+  get "welcome/ecommerce"
+
+  get "welcome/map"
+
+  get "welcome/design"
+
   #match '/email'=> 'app/mailers/contact_mailer#contact'
 
   # The priority is based upon order of creation:

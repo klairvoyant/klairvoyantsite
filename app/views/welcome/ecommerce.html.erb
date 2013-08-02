@@ -1,0 +1,83 @@
+<div class="span11">
+  <div class="navbar navbar-inverse">
+    <div class="navbar-inner">
+      <span class="brand"> <%= image_tag("logo.png") %><span class="head_colour">Klairvoyant Infosolutions</span></span>
+      <ul class="nav pushFromTop">
+        <li><a href="<%= url_for(:action => 'index', :controller => 'welcome') %>">Home</a></li>
+        <li class="active"><a href="<%= url_for(:action => 'ecommerce', :controller => 'welcome') %>">E-commerce</a></li>
+        <li><a href="<%= url_for(:action => 'map', :controller => 'welcome') %>">Map</a></li>
+        <li><a href="<%= url_for(:action => 'design', :controller => 'welcome') %>">Design</a></li>
+        <li><a href="<%= url_for(:action => 'contact', :controller => 'welcome') %>">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="span11">
+  <div class="head1"> e-commerce solutions</div>
+</div>
+<div class="span6">
+  <div class="text">
+    <h4>e-commerce </h4>
+    <p> Electronic commerce, commonly known as e-commerce, is a type of industry where buying and selling of product or service is conducted over electronic systems such as the Internet and other computer networks. </p>
+    <h4> spree</h4>
+    <p>
+      we using  spree for the development process.
+      Spree is a 100% open source e-commerce platform powered by the popular Ruby on Rails framework. It was designed to make customization and upgrades as simple as possible. Other tool/ technologies we use include JQuery, Bootstrap, Heroku and paypal.
+    </p>
+  </div>
+  <div class="row ">
+    <div class="span1">
+      <%=link_to image_tag("spree.jpg"), "http://spreecommerce.com/" %>
+    </div>
+    <div class="span1">
+      <%=link_to image_tag("rails.png"), "http://rubyonrails.org/" %>
+    </div>
+    <div class="span1">
+      <%=link_to image_tag("jquery.jpg"), "http://jquery.com/" %>
+    </div>
+    <div class="span1">
+      <%=link_to image_tag("bootstrap.jpg"), "http://getbootstrap.com/" %>
+    </div>
+    <div class="span1">
+      <%=link_to image_tag("heroku.jpg"), "https://www.heroku.com/" %>
+    </div>
+    <div class="span1">
+      <%=link_to image_tag("paypal.jpg"), "https://www.paypal.com" %>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="span4">
+  <div class="text">
+    <h4> Rails Blog</h4>
+    <div class="row ">
+      <div class=" moveDownRight span4">
+        <script src="http://feeds.feedburner.com/RubyOnRailsTips?format=sigpro" type="text/javascript" ></script><noscript><p>Subscribe to RSS headline updates from: <a href="http://feeds.feedburner.com/RubyOnRailsTips"></a><br/>Powered by FeedBurner</p> </noscript>
+      </div>
+    </div>
+  </div>
+  <div class="text">
+    <h4> Web Development Blog</h4>
+    <div class="row ">
+      <div class=" moveDownRight span4">
+        <script src="http://feeds.feedburner.com/blogspot/GAHiE?format=sigpro" type="text/javascript" ></script><noscript><p>Subscribe to RSS headline updates from: <a href="http://feeds.feedburner.com/blogspot/GAHiE"></a><br/>Powered by FeedBurner</p> </noscript>
+      </div>
+    </div>
+  </div>
+
+
+ <div class="text">
+    <h4> Portfolio</h4>
+  <div class="row ">
+    <div class="span4">
+      <%=link_to image_tag("orchids.png"), "http://orchids.klairvoyant.com/" %>
+    </div>
+  </div>
+ </div>
+
+</div>
+
+
+

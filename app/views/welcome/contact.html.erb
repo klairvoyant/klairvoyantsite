@@ -1,19 +1,21 @@
-<div id="navigation">
-  <div id="navigationspace">
-    &nbsp;
+<div class="span11">
+  <div class="navbar navbar-inverse">
+    <div class="navbar-inner">
+      <span class="brand"> <%= image_tag("logo.png") %><span class="head_colour">Klairvoyant Infosolutions</span></span>
+      <ul class="nav pushFromTop">
+        <li><a href="<%= url_for(:action => 'index', :controller => 'welcome') %>">Home</a></li>
+        <li><a href="<%= url_for(:action => 'ecommerce', :controller => 'welcome') %>">E-commerce</a></li>
+        <li><a href="<%= url_for(:action => 'map', :controller => 'welcome') %>">Map</a></li>
+        <li><a href="<%= url_for(:action => 'design', :controller => 'welcome') %>">Design</a></li>
+        <li class="active"><a href="<%= url_for(:action => 'contact', :controller => 'welcome') %>">Contact</a></li>
+      </ul>
+    </div>
   </div>
-
-  <ul class="dropdown">
-    <li><a href="<%= url_for(:action => 'index', :controller => 'welcome') %>">Home</a>    </li>
-    <li><a href="<%= url_for(:action => 'services', :controller => 'welcome') %>">Services</a>   </li>
-    <li><a href="<%= url_for(:action => 'contact', :controller => 'welcome') %>">Contact</a>       </li>
-  </ul>
 </div>
-
-<div id="firstColumn">
-
-  <div class="head1"> Contact Us</div>
-
+<div class="span11">
+  <div class="row ">
+    <div class="span6">
+      <div class="head1"> Contact Us</div>
       <%= form_tag 'sendmail',:method => :get,:id => 'contactForm' do -%>
 
           <div class="labelText">Name</div> <%= text_field("cruncher", "name", {:value=>params[:name]})%> <br/>
@@ -22,33 +24,47 @@
           <div class="labelText">Message</div>  <%= text_area("cruncher", "bodydata",{:value=>params[:bodydata]})%> <br>
           <%= submit_tag "Send Mail"%>
       <% end -%>
+      <div class="notice2"><%= notice %></div>
 
-  <div class="notice2"><%= notice %></div>
+    </div>
+    <div class="span1">
 
-</div>
+    </div>
+    <div class="span4">
 
-<div id="lastColumn">
+      <div class="head2"> Payment</div>
+      <div id="payment">
 
-  <div class="head2"> Address</div>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="JYHMT9GAXEGCJ">
+          <table>
+            <tr><td><input type="hidden" name="on0" value="Service Charges">Service Charges</td></tr><tr><td><select name="os0">
+            <option value="1">1 $50.00 USD</option>
+            <option value="2">2 $100.00 USD</option>
+            <option value="3">3 $200.00 USD</option>
+            <option value="4">4 $500.00 USD</option>
+          </select> </td></tr>
+          </table>
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal — The safer, easier way to pay online.">
+          <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+        </form>
+      </div>
+      <div class="head2"> Address</div>
 
-  <div class="contactpara">Post Box  No: 709, <br/> East Fort, Thrissur, <br/>Kerala, India 680005  </div>
+      <div class="contactpara">Post Box  No: 709, <br/> East Fort, Thrissur, <br/>Kerala, India 680005  </div>
 
-  <div class="head2"> E-mail</div>
-  <div class="contactpara">
-   contact@klairvoyant.com
+      <div class="head2"> E-mail</div>
+      <div class="contactpara">
+        contact@klairvoyant.com
+      </div>
+
+
+    </div>
+
   </div>
-
-
-
-  <div class="head2"> Location</div>
-  <iframe frameborder=0 marginwidth=0 marginheight=0 border=0 style="border:0;margin:0;width:300px;height:250px;" src="http://www.google.com/uds/modules/elements/mapselement/iframe.html?maptype=roadmap&latlng=10.618599%2C76.036891&mlatlng=10.618599%2C76.036891&maddress1=Muttath%2C%20kottapady&maddress2=Kerala%20680505%2C%20India&mtitle=Klairvoyant%20Infosolutions&element=true" scrolling="no" allowtransparency="true"></iframe>
-
-
-
-
 </div>
-
-
 
 
 

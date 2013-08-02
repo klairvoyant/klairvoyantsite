@@ -1,0 +1,58 @@
+<div class="span11">
+  <div class="navbar navbar-inverse">
+    <div class="navbar-inner">
+      <span class="brand"> <%= image_tag("logo.png") %><span class="head_colour">Klairvoyant Infosolutions</span></span>
+      <ul class="nav pushFromTop">
+        <li><a href="<%= url_for(:action => 'index', :controller => 'welcome') %>">Home</a></li>
+        <li><a href="<%= url_for(:action => 'ecommerce', :controller => 'welcome') %>">E-commerce</a></li>
+        <li class="active"><a href="<%= url_for(:action => 'map', :controller => 'welcome') %>">Map</a></li>
+        <li><a href="<%= url_for(:action => 'design', :controller => 'welcome') %>">Design</a></li>
+        <li><a href="<%= url_for(:action => 'contact', :controller => 'welcome') %>">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="span11">
+  <div class="head1"> Map Applications</div>
+</div>
+<div class="span6">
+  <div class="text">
+    <h4>Map API </h4>
+    <p> API lets you embed  Maps in your own web pages.API provides a number of utilities for manipulating maps  and adding content to the map through a variety of services, allowing you to create robust maps applications on your website.
+    </p>
+    <h4> Google Map API</h4>
+    <p>The Google Maps Javascript API lets you embed Google Maps in your own web pages </p>
+    <h4> Garmin API</h4>
+    <p>The Garmin Communicator Plugin is an software program that transfers data between websites and Garmin GPS Devices.  </p>
+  </div>
+  <div class="row ">
+       <div class="span1">
+        <%=link_to image_tag("google.jpg"), "https://developers.google.com/maps/documentation/javascript/" %>
+      </div>
+      <div class="span1">
+        <%=link_to image_tag("garmin.jpg"), "http://developer.garmin.com/web-device/garmin-communicator-plugin/" %>
+      </div>
+  </div>
+</div>
+<div class="span4">
+  <div class="text">
+  <h4> Map API Blog</h4>
+  <div class="row ">
+    <div class="moveDownRight span4">
+      <script src="http://feeds.feedburner.com/GoogleMapApiTips?format=sigpro" type="text/javascript" ></script><noscript><p>Subscribe to RSS headline updates from: <a href="http://feeds.feedburner.com/GoogleMapApiTips"></a><br/>Powered by FeedBurner</p> </noscript>
+    </div>
+  </div>
+</div>
+  <div class="text">
+    <h4> Portfolio</h4>
+    <div class="row">
+      <div class="span1">
+        <%=link_to image_tag("cyclemycity.png"), "http://www.cyclemycity.com/" %>
+      </div>
+      <div class="span1">
+        <%=link_to image_tag("tourmate.png"), "http://tourmate.heroku.com/" %>
+      </div>
+    </div>
+  </div>
+
+</div>

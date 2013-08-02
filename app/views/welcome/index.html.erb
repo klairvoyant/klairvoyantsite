@@ -1,61 +1,48 @@
 
-      <div class="span12">
+      <div class="span11">
           <div class="navbar navbar-inverse">
             <div class="navbar-inner">
               <span class="brand"> <%= image_tag("logo.png") %><span class="head_colour">Klairvoyant Infosolutions</span></span>
               <ul class="nav pushFromTop">
                 <li class="active"><a href="<%= url_for(:action => 'index', :controller => 'welcome') %>">Home</a></li>
-                <li><a href="<%= url_for(:action => 'services', :controller => 'welcome') %>">Services</a></li>
+                <li><a href="<%= url_for(:action => 'ecommerce', :controller => 'welcome') %>">E-commerce</a></li>
+                <li><a href="<%= url_for(:action => 'map', :controller => 'welcome') %>">Map</a></li>
+                <li><a href="<%= url_for(:action => 'design', :controller => 'welcome') %>">Design</a></li>
                 <li><a href="<%= url_for(:action => 'contact', :controller => 'welcome') %>">Contact</a></li>
               </ul>
             </div>
           </div>
       </div>
-      <div class="span12">
+      <div class="span11">
 
         <div id="myCarousel" class="carousel slide">
 
           <!-- Carousel items -->
           <div class="carousel-inner">
+            <div class="item">
+              <%= image_tag("sample2.png",:class =>"image_size") %>
+              <div class="container">
+                <div class="carousel-caption">
+
+                  <div class='row-fluid'>
+                    <div class="span12">
+
+                      <h1><a href="http://tourmate.heroku.com">Map Application </a> </h1>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="active item">
-              <%= image_tag("poo2.jpg",:class =>"image_size") %>
+              <%= image_tag("sample1.png",:class =>"image_size") %>
               <div class="container">
                 <div class="carousel-caption">
 
                   <div class='row-fluid'>
                     <div class="span12">
 
-                      <h1> map</h1>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <%= image_tag("poo1.jpg",:class =>"image_size") %>
-              <div class="container">
-                <div class="carousel-caption">
-
-                  <div class='row-fluid'>
-                    <div class="span12">
-
-                      <h1> ecommerce</h1>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <%= image_tag("poo1.jpg",:class =>"image_size") %>
-              <div class="container">
-                <div class="carousel-caption">
-
-                  <div class='row-fluid'>
-                    <div class="span12">
-
-                      <h1> ecommerce</h1>
+                      <h1> <a href="http://www.orchids.klairvoyant.com">E-commerce Solutions </a></h1>
                     </div>
 
                   </div>
@@ -71,13 +58,54 @@
 
       </div>
 
+      <div class="span11">
+        <div class="row">
+          <div class="span6">
 
-<div id="firstColumn">
-   <div class="head1"> Who we are</div>
-  <div class="para"> We are small firm providing web solutions. concentrated on Ruby on rails for server side script.We can do services like Website creation, Web 2.0 User Interface, Graphic works for print media etc..</div>
-  <div class="head1">  Our motto </div>
-  <div class="para">We believe in making a positive impact on the environment, consumers, employees, communities, stakeholders and all other members of the public sphere by our activities. we wish to promote  public interest by encouraging community growth and development. we wish to voluntarily eliminating practices that harm the public sphere and deliberately include public interest into corporate decision-making by honoring people, planet, and profit.</div>
-</div>
+            <div class="head1"> Who we Are</div>
+            <div class="contactpara2">
+              We are firm providing web solutions. concentrated on Ruby on rails for server side script.We can do ecommerce site,map application and graphic design works.
+
+            </div>
+            <div class="head1"> Our motto</div>
+            <div class="contactpara2">
+              We believe in making a positive impact on the environment, consumers, employees, communities, stakeholders and all other members of the public sphere by our activities. we wish to promote  public interest by encouraging community growth and development. we wish to voluntarily eliminating practices that harm the public sphere and deliberately include public interest into corporate decision-making by honoring people, planet, and profit.
+            </div>
+
+
+          </div>
+          <div class="span5">
+
+              <div class="row">
+                <div class="head1"> Our Services</div>
+
+                <%= link_to image_tag('ecommerce.jpg'), url_for({:controller => 'welcome', :action => 'ecommerce'}) %>
+                <div class="head3"> <a href="<%= url_for({:controller => 'welcome', :action => 'ecommerce'}) %>">e-commerce</a></div>
+
+              </div>
+
+              <div class="row">
+
+                 <%= link_to image_tag('map.png'), url_for({:controller => 'welcome', :action => 'map'}) %>
+                <div class="head3"> <a href="<%= url_for({:controller => 'welcome', :action => 'map'}) %>">Map Applications</a></div>
+
+              </div>
+
+              <div class="row">
+
+                <%= link_to image_tag('graphic design.jpg'), url_for({:controller => 'welcome', :action => 'design'}) %>
+                <div class="head3"> <a href="<%= url_for({:controller => 'welcome', :action => 'design'}) %>">Graphic Design</a></div>
+
+              </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
 
 
 
